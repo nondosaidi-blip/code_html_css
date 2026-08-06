@@ -1,0 +1,28 @@
+form{
+    background-color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: justify;
+}
+input{
+    align-items: center;
+}
+button{
+    color: rgb(27, 211, 171);
+    align-self: center;
+}
+h1{
+    background-color: aquamarine;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align: center;
+text-decoration: solid;
+}
+body{
+background-color: rgb(218, 229, 229);
+}
+.textarea{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
