@@ -203,5 +203,131 @@ footer {
         padding: 50px 20px;
     }
 }
+/* --- FOOTER STYLES --- */
+.site-footer {
+  background-color: #1e293b; /* Bleu foncé élégant matching avec le header */
+  color: #f1f5f9;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  margin-top: 50px;
+}
 
-/* Fin de la partie de Lévi Tshipamba */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* 1. Style Logo */
+.footer-logo img {
+  max-width: 160px;
+  height: auto;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* Titres des colonnes */
+.footer-title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 35px;
+  height: 3px;
+  background-color: #38bdf8; /* Accent bleu clair */
+  border-radius: 2px;
+}
+
+/* Listes de liens & Contact */
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+  transform: translateX(5px);
+}
+
+.footer-contact i {
+  margin-right: 10px;
+  color: #38bdf8;
+}
+
+/* 2. Style des Réseaux Sociaux */
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #334155;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+/* Couleurs au survol pour chaque réseau */
+.social-icon:hover {
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
+.social-icon.facebook:hover { background-color: #1877f2; }
+.social-icon.whatsapp:hover { background-color: #25d366; }
+.social-icon.instagram:hover { background-color: #e4405f; }
+.social-icon.x-twitter:hover { background-color: #000000; }
+.social-icon.tiktok:hover { background-color: #000000; }
+.social-icon.youtube:hover { background-color: #ff0000; }
+
+/* Bas de page */
+.footer-bottom {
+  background-color: #0f172a;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  border-top: 1px solid #334155;
+}
