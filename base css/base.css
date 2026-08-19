@@ -8,16 +8,16 @@
     font-family: Arial, sans-serif;
 }
 
-html {
+/* html {
     min-height: 100%;
-}
+} */
 
-body {
-    min-height: 100vh;
+body{
+    height: 100vh;
     position: relative;
     overflow-x: hidden;
     color: #ffffff;
-}
+    display:flow-root;}
 
 /* Image floutée en arrière-plan */
 body::before {
@@ -39,12 +39,18 @@ body::after {
 }
 
 /* En-tête */
+/* header {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+} */
+
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 15px;
-    padding: 5px 20px;
+    margin: 5px 10px;
+    padding: 5px 10px;
     background-color: rgba(179, 231, 231, 0.9);
     border-radius: 5px;
 }
@@ -91,23 +97,33 @@ nav ul li a:hover {
 .hero h1 {
     text-align: center;
     font-size: clamp(2rem, 6vw, 3.5rem);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .hero p {
     max-width: 850px;
     margin-bottom: 12px;
     font-size: 1.2rem;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.614);
 }
 
 /* Boutons */
-.hero button {
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin: 0;
+}
+
+.hero .container button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    margin: 15px 5px 0 0;
+    margin: 5px 5px 0 0;
     font-size: 1rem;
     font-weight: bold;
     color: #121212;
@@ -145,11 +161,11 @@ nav ul li a:hover {
     background-color: #1f2121;
 } */
 
-.hero button {
+.hero .container button {
     margin: 0;
 }
 
-.hero button:hover {
+.hero .container button:hover {
     background-color: #7ac5c5;
     border: 1px solid #000;
     transform: scale(1.05);
@@ -170,7 +186,7 @@ footer {
 }
 
 /* Le responsive pour l'adaptation aux petits écrans */
-@media (max-width: 700px) {
+@media (max-width: 650px) {
     header nav {
         flex-direction: column;
         gap: 20px;
