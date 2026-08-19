@@ -1,0 +1,42 @@
+.section,h1{
+    text-align: center;
+}
+.section,h1,p{
+    text-align: center;
+}
+.banniere h1{
+    background: url(../image.png);
+    font-size: 2rem;
+    margin-bottom: 25px;letter-spacing: 1px;
+}
+.carte{
+    background: url(../image.png);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px;
+    transition: transform 0.3s;
+}
+.carte{
+    background: url(../image.png);
+     padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px;
+    transition: transform 0.3s;
+}
+.carte:hover{
+    color: rgb(1, 21, 3);
+}
+.carte h2{
+    color: rgb(1, 21, 21);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.carte p{
+    text-align: left;
+    color: black;
+    line-height: 1.6;
+}
+.footer{
+    background: white;
+    text-align: center;
+}
